@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LotoFácil - Jogos</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header__title">
+        <img src="img/Logo_da_Lotofácil.png" alt="">
+      </div>
+    </header>
+      <main>
+        <div class="container__main">
+          <section class="explicacao">
+            <h2 class="main__h2">Como Jogar?</h2>
+            <p>
+              A Lotofácil é, como o próprio nome diz, fácil de apostar e principalmente de ganhar. Você marca entre 15 e 20 números, dentre os 25 disponíveis no volante, e fatura prêmio se acertar 11, 12, 13, 14 ou 15 números. Pode ainda deixar que o sistema escolha os números para você por meio da Surpresinha, ou concorrer com a mesma aposta por 3, 6, 12, 18 ou 24 concursos consecutivos através da Teimosinha.
+            </p>
+          </section>
+          <section class="jogo">
+            <div class="campos">
+              <select name="num" id="qtdNumeros">
+                <option disabled selected>Escolha a quantidade de números</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+              </select>
+              <input type="text" placeholder="Digite a quantidade de jogos que deseja criar" id="numJogos"/>
+              <select name="ordem" id="ordem">
+                <option disabled selected>Escolha a forma que deseja a ordem dos números</option>
+                <option value="ordenado">Por sequência</option>
+                <option value="desordenado">Sem sequência</option>
+              </select>
+            </div>
+            <p>
+              <b>Exemplo:</b> 15 (números escolhidos), 10 jogos, Por sequência:</p> 
+              <p>Jogo 1: 1, 2, 3, 4, 5...</p>
+              <p>Jogo 2: 1, 3, 4, 5, 6...</p>
+              <p>Jogo 3: 1, 2, 4, 5, 6...</p>
+            </section>
+            <div class="combinacao">
+              <section class="numeros">
+              </section>
+                <section class="escolha"></section>
+            </di>
+          </div>
+          <button onclick="geraSorteio()">Gerar Sorte</button>
+          <button onclick="geraSorteio()">Limpar Campos</button>
+
+      </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
